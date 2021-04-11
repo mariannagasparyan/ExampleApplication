@@ -1,18 +1,18 @@
 package com.example.exampleapplication;
 
-
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
+import android.os.Bundle;
 
-class SplashScren extends Activity {
+
+public class SplashScren extends AppCompatActivity {
 
     Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_splash_scren);
 
         handler=new Handler();
         handler.postDelayed(new Runnable() {
